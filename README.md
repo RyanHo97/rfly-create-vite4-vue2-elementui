@@ -6,6 +6,10 @@
 
 rfly-create可以快速创建一个vite4+vue2的基础环境和配置
 
+更新版本：
+
+0.0.2 着重优化了打包的体积以及性能
+
 > #### If you want to use rfly-create
 > 
 ```
