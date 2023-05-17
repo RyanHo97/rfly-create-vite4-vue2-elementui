@@ -7,8 +7,12 @@ const createRouter = () => new VueRouter({
     routes: [
         {
             path: '/',
+            component: () => import("@/views/Login.vue")
+        },
+        {
+            path: '/home',
             component: () => import("@/views/Home.vue")
-        }
+        },
     ]
 })
 
