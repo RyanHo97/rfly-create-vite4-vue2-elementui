@@ -1,14 +1,15 @@
 import axios from 'axios';
 
 const service = axios.create({
-  baseURL: 'http://www.yourapisite/api/',
+  // baseURL: 'http://www.yourapisite/api/',
+  baseURL: 'http://localhost:3000/api/v1/',
   withCredentials: true,
   timeout: 30000,
   headers: {
     'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-    'Content-Type': 'application/json'
+    'Access-Control-Allow-Headers': '*',
+    'Access-Control-Allow-Methods': '*',
+    'Content-Type': 'application/json',
   }
 });
 

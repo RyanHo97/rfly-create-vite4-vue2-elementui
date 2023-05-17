@@ -2,17 +2,14 @@ import service from '../index.js'
 /**
  * AXIOS MODULE SAMPLE
  */
-const DEFAULT_HEADER = {
-    'TEST': "TEST"
-}
 
 var parameters = {}
 
 export default {
     getDataList: (data) => {
         return service({
-            method: 'post',
-            url: "login_check",
+            method: 'get',
+            url: "test",
             data: JSON.stringify(parameters),
             dataType: "json",
             contentType: 'application/json;charset=UTF-8',
